@@ -14,7 +14,6 @@ func slicp(x, y int) (int, int) {
 func main() {
 	var a, b int = 10110003720001, 10110003920000
 	a, c := slicp(a, b)
-
 	p := []int{}
 	for i := 0; i < c; i++ {
 		a += 50000
