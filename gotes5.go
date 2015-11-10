@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"runtime"
 	"time"
+
 )
 
 func main() {
@@ -50,11 +51,14 @@ func main() {
 	default:
 		fmt.Println("Good evening.")
 	}
-	fmt.Println("counting")
+	fmt.Println(time.Now().Format("2006-01-02 15:04:05"))
+	
+        baseTime := time.Date(1980, 1, 6, 0, 0, 0, 0, time.UTC)
+        date := baseTime.Add(4*time.Month)
+        fmt.Println(date)
 
-	for i := 0; i < 10; i++ {
-		defer fmt.Println(i)
-	}
 
-	fmt.Println("done")
+	
+ 
+
 }
